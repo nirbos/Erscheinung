@@ -1,0 +1,27 @@
+#window-content > .split-view > .view {
+  overflow: hidden;
+}
+
+#file-manager #component-container {
+  height: calc(100% - 44px);
+}
+
+#file-manager {
+  border-top: none;
+}
+
+#file-manager .file-manager-filter {
+  background-color: transparent;
+  height: auto;
+  padding: 12px;
+}
+
+#file-manager .file-manager-filter .file-manager-filter-input {
+  background-color: var(--theme-primary-2);
+  color: var(--text-default);
+  height: 32px;
+}
+
+#file-manager .file-manager-filter .file-manager-filter-input:placeholder {
+  color: var(--text-decent);
+}

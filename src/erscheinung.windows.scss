@@ -1,0 +1,32 @@
+/* Erscheinung */
+
+@import "assets/colors";
+
+body.win32,
+body.win32.dark {
+  @import "areas/global";
+  @import "areas/window-chrome";
+  @import "areas/toolbar";
+  @import "areas/file-manager";
+  @import "areas/file-tree";
+  @import "areas/tab-area";
+  @import "areas/split-view";
+  @import "areas/window-content";
+  @import "areas/editor";
+  @import "areas/statusbar";
+  @import "areas/popover";
+  @import "areas/popover-stats";
+  @import "areas/popover-tag-cloud";
+  @import "areas/popover-file-export";
+  @import "areas/tooltip";
+  @import "areas/application-menu";
+  @import "areas/cm-panels";
+
+  //OS specific
+  @import "os/win32/global";
+  @import "os/win32/window-chrome";
+  @import "os/win32/file-manager";
+  @import "os/win32/toolbar";
+  @import "os/win32/tab-area";
+  @import "os/win32/popover-tag-cloud";
+}

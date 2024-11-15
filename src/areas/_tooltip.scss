@@ -1,0 +1,42 @@
+.ͼ1,
+.ͼ3,
+.ͼ4,
+.ev {
+  .cm-tooltip {
+    padding: 6px;
+    background-color: var(--theme-primary-2);
+    color: var(--text-default);
+    border: 2px solid var(--theme-primary-5);
+  }
+
+  .cm-tooltip .cm-tooltip-arrow:before {
+    border-top-color: var(--theme-primary-5);
+    border-bottom-color: var(--theme-primary-5);
+  }
+
+  .cm-tooltip.cm-formatting-bar {
+    border-radius: 6px;
+
+    button.formatting-toolbar-button {
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-decent);
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+
+      &:hover,
+      &:focus {
+        background-color: var(--theme-primary-4);
+        color: var(--text-highlight);
+      }
+
+      &:active {
+        background-color: var(--theme-primary-6);
+        color: var(--text-highlight);
+      }
+    }
+  }
+}

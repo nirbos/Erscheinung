@@ -1,0 +1,210 @@
+.main-editor-wrapper {
+  background-color: var(--theme-primary-1);
+}
+
+//TODO: Has everything to be wrapped by .e1, .e3, .e4, .ev, .eu?
+
+.editor-pane .editor-container .empty-pane {
+  background-color: var(--theme-primary-1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: none;
+
+  &::before {
+    content: "Zettlr";
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--text-subtle);
+    font-family: monospace;
+    white-space: pre-wrap;
+    text-align: center;
+    margin: 0 0 2px 0;
+  }
+
+  &::after {
+    content: "Erscheinung";
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--text-subtle);
+    font-family: monospace;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+}
+
+.ͼu .cm-scroller,
+.ͼv .cm-scroller {
+  color: var(--text-default);
+}
+
+.ͼv .cm-url,
+.ͼv .cm-code-mark,
+.cm-meta {
+  color: var(--theme-primary-8);
+}
+
+.ͼv .cm-link {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+.ͼv .cm-zkn-tag {
+  background-color: var(--pine-green-4);
+  color: var(--text-default);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-weight: normal;
+  font-size: 0.7em;
+  cursor: context-menu;
+
+  &:hover,
+  &:focus {
+    background-color: var(--pine-green-6);
+  }
+
+  &:active {
+    background-color: var(--pine-green-2);
+  }
+}
+
+.ͼv .cm-zkn-link {
+  color: var(--text-default);
+  text-decoration: underline;
+}
+
+.cm-editor .cm-selectionMatch {
+  background-color: transparent;
+}
+
+.ͼv .cm-cursor-primary {
+  background: var(--text-subtle);
+}
+
+//TODO: Cursor within Tag is not visible
+
+.ͼ1 .cm-foldPlaceholder {
+  background-color: var(--theme-primary-4);
+  border: none;
+  color: var(--text-decent);
+  border-radius: 6px;
+  margin: 0 12px;
+  padding: 0 6px 4px 6px;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  bottom: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--theme-primary-5);
+  }
+
+  &:active {
+    background-color: var(--theme-primary-3);
+  }
+}
+
+.ͼ3 .cm-gutters {
+  background-color: var(--theme-primary-1);
+  color: var(--text-subtle);
+}
+
+.ͼ1 .cm-foldGutter span {
+  background-color: var(--theme-primary-4);
+  color: var(--text-decent);
+  padding: 0px 9px 6px 9px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    background-color: var(--theme-primary-5);
+  }
+
+  &:active {
+    background-color: var(--theme-primary-3);
+  }
+
+  &[title~="Unfold"] {
+    padding-top: 4px;
+  }
+}
+
+.ͼ1 .cm-lineNumbers .cm-gutterElement {
+  padding: 2px 4px 0 6px;
+  font-size: 14px;
+  white-space: nowrap; //Fix broken CSS
+  cursor: default;
+}
+
+.cm-editor .size-header-2 {
+  font-size: 1.6em;
+}
+
+.cm-editor .size-header-3 {
+  font-size: 1.4em;
+}
+
+.cm-editor .size-header-4 {
+  font-size: 1.2em;
+}
+
+.cm-editor .size-header-5 {
+  font-size: 1.1em;
+}
+
+.cm-editor .size-header-6 {
+  font-size: 1em;
+}
+
+.ͼ4 .cm-line::selection,
+.ͼv .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+.ͼv.cm-focused .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+.ͼv ::selection {
+  color: var(--text-default);
+  background-color: var(--theme-primary-3);
+}
+
+.ͼ3 .cm-readability-0 {
+  background-color: var(--danger-4);
+  color: var(--text-default);
+}
+
+.ͼ3 .cm-readability-1 {
+}
+.ͼ3 .cm-readability-2 {
+}
+.ͼ3 .cm-readability-3 {
+}
+.ͼ3 .cm-readability-4 {
+}
+.ͼ3 .cm-readability-5 {
+}
+.ͼ3 .cm-readability-6 {
+}
+.ͼ3 .cm-readability-7 {
+}
+.ͼ3 .cm-readability-8 {
+}
+.ͼ3 .cm-readability-9 {
+}
+.ͼ3 .cm-readability-10 {
+}
+
+.rendered-bullet,
+.cm-list.cm-content-span.cm-code-mark.cm-meta {
+  line-height: 1em; // Fix for reducing the jumping when selecting bullet points
+
+  width: 0.438684210526316em; // Fix for reducing the jiggling to the sided when selecting bullet points
+  display: inline-block;
+  text-indent: 0;
+}

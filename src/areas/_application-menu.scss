@@ -1,0 +1,40 @@
+div.application-menu {
+  background-color: var(--theme-primary-2);
+  border-color: var(--theme-primary-5);
+  color: var(--text-default);
+  border-radius: 6px;
+
+  div.menu-item {
+    padding: 4px 0;
+    height: auto;
+    grid-template-columns: 24px auto 80px; //The columns are "status", "label" and "after". It seems like "status" and "after" are only used in the menubar items.
+    cursor: pointer;
+    border-radius: 6px;
+
+    &.disabled {
+      color: var(--text-subtle);
+      cursor: default;
+    }
+
+    &:not(.separator):not(.disabled) {
+      &:hover,
+      &:focus {
+        background-color: var(--theme-primary-4);
+      }
+
+      &:active {
+        background-color: var(--theme-primary-6);
+      }
+    }
+
+    div.after-element {
+      padding-right: 8px;
+      color: var(--text-subtle);
+    }
+  }
+
+  div.menu-item.separator {
+    border-color: var(--theme-primary-4);
+    padding: 0;
+  }
+}

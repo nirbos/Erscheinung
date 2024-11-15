@@ -1,0 +1,27 @@
+/* Erscheinung */
+
+@import "assets/colors";
+
+body.linux,
+body.linux.dark {
+  @import "areas/global";
+  @import "areas/window-chrome";
+  @import "areas/toolbar";
+  @import "areas/file-manager";
+  @import "areas/file-tree";
+  @import "areas/tab-area";
+  @import "areas/split-view";
+  @import "areas/window-content";
+  @import "areas/editor";
+  @import "areas/statusbar";
+  @import "areas/popover";
+  @import "areas/popover-stats";
+  @import "areas/popover-tag-cloud";
+  @import "areas/popover-file-export";
+  @import "areas/tooltip";
+  @import "areas/application-menu";
+  @import "areas/cm-panels";
+
+  //OS specific
+  @import "os/gnulinux/window-chrome";
+}

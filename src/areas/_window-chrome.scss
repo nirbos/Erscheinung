@@ -1,0 +1,41 @@
+#menubar {
+  background-color: var(--theme-primary-0);
+  display: flex;
+  height: 36px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  padding-left: 42px;
+  align-items: center;
+
+  span.top-level-item {
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 0 8px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-decent);
+
+    &:hover,
+    &:focus {
+      background-color: var(--theme-primary-2);
+      color: var(--text-highlight);
+    }
+
+    &:active {
+      background-color: var(--theme-primary-4);
+      color: var(--text-highlight);
+    }
+  }
+}
+
+#window-controls {
+  .minimise,
+  .resize,
+  .close {
+    cursor: pointer;
+    fill: var(--text-decent);
+    stroke: var(--text-decent);
+  }
+}

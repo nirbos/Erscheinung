@@ -1,0 +1,67 @@
+.cm-panels.cm-panels-top {
+  background-color: var(--theme-primary-1);
+  margin: 12px;
+}
+
+.cm-search {
+  padding: 12px;
+  background-color: var(--theme-primary-2);
+  color: var(--theme-secondary-2);
+  border-radius: 6px;
+  width: 100%;
+
+  input {
+    font-size: 12px;
+    margin: 6px;
+  }
+
+  input[name="search"],
+  input[name="replace"] {
+    height: 32px;
+    background-color: var(--theme-primary-4);
+  }
+
+  input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  label {
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 6px;
+  }
+}
+
+.ͼ1 .cm-panels button {
+  cursor: pointer;
+  color: var(--text-decent);
+  background-color: var(--theme-primary-4);
+
+  &:hover,
+  &:focus {
+    background-color: var(--theme-primary-6);
+  }
+
+  &:active {
+    color: var(--text-default);
+    background-color: var(--theme-primary-8);
+  }
+}
+
+.ͼ1 .cm-panels button[name="close"] {
+  padding: 6px;
+  top: 18px;
+  right: 18px;
+  font-size: 12px;
+  width: 32px;
+  height: 32px;
+  line-height: normal;
+}
+
+.ͼ1 .cm-panels .cm-button {
+  font-size: 12px;
+  margin: 6px;
+  height: 32px;
+}

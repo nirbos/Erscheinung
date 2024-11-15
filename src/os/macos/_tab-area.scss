@@ -1,0 +1,9 @@
+div.tab-container {
+  div[role="tab"] {
+    padding: 0 12px 0 6px;
+
+    .close {
+      order: -2;
+    }
+  }
+}

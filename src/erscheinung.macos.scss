@@ -1,0 +1,28 @@
+/* Erscheinung */
+
+@import "assets/colors";
+
+body.darwin,
+body.darwin.dark {
+  @import "areas/global";
+  // window-chrome is not needed on macOS systems
+  @import "areas/toolbar";
+  @import "areas/file-manager";
+  @import "areas/file-tree";
+  @import "areas/tab-area";
+  @import "areas/split-view";
+  @import "areas/window-content";
+  @import "areas/editor";
+  @import "areas/statusbar";
+  @import "areas/popover";
+  @import "areas/popover-stats";
+  @import "areas/popover-tag-cloud";
+  @import "areas/popover-file-export";
+  @import "areas/tooltip";
+  @import "areas/application-menu";
+  @import "areas/cm-panels";
+
+  //OS specific
+  @import "os/macos/global";
+  @import "os/macos/tab-area";
+}

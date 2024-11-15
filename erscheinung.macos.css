@@ -1,0 +1,985 @@
+@charset "UTF-8";
+/* Erscheinung */
+:root {
+  --highlight: #2d5d94;
+  --outer-space-0: #161a1f;
+  --outer-space-1: #1c2229;
+  --outer-space-2: #222b34;
+  --outer-space-3: #273340;
+  --outer-space-4: #2c3b4b;
+  --outer-space-5: #324456;
+  --outer-space-6: #384d62;
+  --outer-space-7: #3d546c;
+  --outer-space-8: #415b75;
+  --pine-green-0: #123434;
+  --pine-green-1: #123e3e;
+  --pine-green-2: #114848;
+  --pine-green-3: #0f5252;
+  --pine-green-4: #0a5c5c;
+  --pine-green-5: #306d6d;
+  --pine-green-6: #4b7e7d;
+  --pine-green-7: #65908f;
+  --pine-green-8: #7ea2a1;
+  --periwinkle-0: #e9eff9;
+  --periwinkle-1: #e0e9f8;
+  --periwinkle-2: #dce7f6;
+  --periwinkle-3: #d6e3f5;
+  --periwinkle-4: #d2e0f5;
+  --periwinkle-5: #bbcade;
+  --periwinkle-6: #a4b5c8;
+  --periwinkle-7: #8e9fb3;
+  --periwinkle-8: #788b9e;
+  --mahogany-0: #c69e9e;
+  --mahogany-1: #c28080;
+  --mahogany-2: #c56767;
+  --mahogany-3: #d24444;
+  --mahogany-4: #af2121;
+  --mahogany-5: #9f1818;
+  --mahogany-6: #921212;
+  --mahogany-7: #720d0d;
+  --mahogany-8: #460808;
+  --orange-0: #ddb7a0;
+  --orange-1: #dc956a;
+  --orange-2: #eb894f;
+  --orange-3: #dd6823;
+  --orange-4: #e5661a;
+  --orange-5: #cf5b17;
+  --orange-6: #a44912;
+  --orange-7: #7f380e;
+  --orange-8: #502309;
+  --asparagus-0: #babfaa;
+  --asparagus-1: #a8b28c;
+  --asparagus-2: #a1b075;
+  --asparagus-3: #7d923f;
+  --asparagus-4: #7d9536;
+  --asparagus-5: #6e8725;
+  --asparagus-6: #4c6013;
+  --asparagus-7: #39470f;
+  --asparagus-8: #283305;
+}
+
+body {
+  --theme-primary-0: var(--periwinkle-0);
+  --theme-primary-1: var(--periwinkle-1);
+  --theme-primary-2: var(--periwinkle-2);
+  --theme-primary-3: var(--periwinkle-3);
+  --theme-primary-4: var(--periwinkle-4);
+  --theme-primary-5: var(--periwinkle-5);
+  --theme-primary-6: var(--periwinkle-6);
+  --theme-primary-7: var(--periwinkle-7);
+  --theme-primary-8: var(--periwinkle-8);
+  --theme-secondary-0: var(--outer-space-0);
+  --theme-secondary-1: var(--outer-space-1);
+  --theme-secondary-2: var(--outer-space-2);
+  --theme-secondary-3: var(--outer-space-3);
+  --theme-secondary-4: var(--outer-space-4);
+  --theme-secondary-5: var(--outer-space-5);
+  --theme-secondary-6: var(--outer-space-6);
+  --theme-secondary-7: var(--outer-space-7);
+  --theme-secondary-8: var(--outer-space-8);
+  --warning-0: var(--orange-0);
+  --warning-1: var(--orange-1);
+  --warning-2: var(--orange-2);
+  --warning-3: var(--orange-3);
+  --warning-4: var(--orange-4);
+  --warning-5: var(--orange-5);
+  --warning-6: var(--orange-6);
+  --warning-7: var(--orange-7);
+  --warning-8: var(--orange-8);
+  --danger-0: var(--mahogany-0);
+  --danger-1: var(--mahogany-1);
+  --danger-2: var(--mahogany-2);
+  --danger-3: var(--mahogany-3);
+  --danger-4: var(--mahogany-4);
+  --danger-5: var(--mahogany-5);
+  --danger-6: var(--mahogany-6);
+  --danger-7: var(--mahogany-7);
+  --danger-8: var(--mahogany-8);
+  --success-0: var(--asparagus-0);
+  --success-1: var(--asparagus-1);
+  --success-2: var(--asparagus-2);
+  --success-3: var(--asparagus-3);
+  --success-4: var(--asparagus-4);
+  --success-5: var(--asparagus-5);
+  --success-6: var(--asparagus-6);
+  --success-7: var(--asparagus-7);
+  --success-8: var(--asparagus-8);
+  --text-highlight: var(--outer-space-0);
+  --text-default: var(--outer-space-2);
+  --text-decent: var(--outer-space-5);
+  --text-subtle: var(--outer-space-8);
+}
+
+body.dark {
+  --theme-primary-0: var(--outer-space-0);
+  --theme-primary-1: var(--outer-space-1);
+  --theme-primary-2: var(--outer-space-2);
+  --theme-primary-3: var(--outer-space-3);
+  --theme-primary-4: var(--outer-space-4);
+  --theme-primary-5: var(--outer-space-5);
+  --theme-primary-6: var(--outer-space-6);
+  --theme-primary-7: var(--outer-space-7);
+  --theme-primary-8: var(--outer-space-8);
+  --theme-secondary-0: var(--periwinkle-0);
+  --theme-secondary-1: var(--periwinkle-1);
+  --theme-secondary-2: var(--periwinkle-2);
+  --theme-secondary-3: var(--periwinkle-3);
+  --theme-secondary-4: var(--periwinkle-4);
+  --theme-secondary-5: var(--periwinkle-5);
+  --theme-secondary-6: var(--periwinkle-6);
+  --theme-secondary-7: var(--periwinkle-7);
+  --theme-secondary-8: var(--periwinkle-8);
+  --text-highlight: var(--periwinkle-0);
+  --text-default: var(--periwinkle-2);
+  --text-decent: var(--periwinkle-5);
+  --text-subtle: var(--periwinkle-8);
+}
+
+body.darwin input,
+body.darwin select,
+body.darwin textarea,
+body.darwin button,
+body.darwin.dark input,
+body.darwin.dark select,
+body.darwin.dark textarea,
+body.darwin.dark button {
+  color: var(--text-default);
+  border-radius: 6px;
+  background-color: var(--theme-primary-2);
+  border-color: transparent;
+}
+body.darwin input::placeholder,
+body.darwin select::placeholder,
+body.darwin textarea::placeholder,
+body.darwin button::placeholder,
+body.darwin.dark input::placeholder,
+body.darwin.dark select::placeholder,
+body.darwin.dark textarea::placeholder,
+body.darwin.dark button::placeholder {
+  color: var(--text-subtle);
+}
+body.darwin input::-webkit-scrollbar,
+body.darwin select::-webkit-scrollbar,
+body.darwin textarea::-webkit-scrollbar,
+body.darwin button::-webkit-scrollbar,
+body.darwin.dark input::-webkit-scrollbar,
+body.darwin.dark select::-webkit-scrollbar,
+body.darwin.dark textarea::-webkit-scrollbar,
+body.darwin.dark button::-webkit-scrollbar {
+  width: 16px;
+}
+body.darwin ::-webkit-scrollbar-thumb,
+body.darwin.dark ::-webkit-scrollbar-thumb {
+  background: var(--theme-primary-4);
+  border-radius: 99px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+body.darwin ::-webkit-scrollbar-thumb:hover,
+body.darwin.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--theme-primary-6);
+  cursor: grab;
+}
+body.darwin ::-webkit-scrollbar-thumb:active,
+body.darwin.dark ::-webkit-scrollbar-thumb:active {
+  cursor: -webkit-grabbing;
+}
+body.darwin ::-webkit-scrollbar-track,
+body.darwin.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+body.darwin #app,
+body.darwin.dark #app {
+  color: var(--text-default);
+}
+body.darwin div#toolbar,
+body.darwin div#toolbar,
+body.darwin div#toolbar,
+body.darwin.dark div#toolbar,
+body.darwin.dark div#toolbar,
+body.darwin.dark div#toolbar {
+  background-color: var(--theme-primary-0);
+  color: var(--text-decent);
+}
+body.darwin div#toolbar div.three-way-toggle,
+body.darwin.dark div#toolbar div.three-way-toggle {
+  margin: 0;
+  border-radius: 6px;
+}
+body.darwin div#toolbar div.three-way-toggle.active,
+body.darwin.dark div#toolbar div.three-way-toggle.active {
+  background-color: var(--theme-primary-2);
+}
+body.darwin div#toolbar div.three-way-toggle:hover,
+body.darwin.dark div#toolbar div.three-way-toggle:hover {
+  border-color: var(--theme-primary-8);
+}
+body.darwin div#toolbar div.three-way-toggle button.active,
+body.darwin.dark div#toolbar div.three-way-toggle button.active {
+  background-color: var(--theme-primary-4);
+}
+body.darwin div#toolbar button,
+body.darwin.dark div#toolbar button {
+  background-color: var(--theme-primary-0);
+  color: var(--text-decent);
+  padding: 0 8px;
+  display: flex;
+  height: 24px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: auto;
+}
+body.darwin div#toolbar button:hover, body.darwin div#toolbar button:focus,
+body.darwin.dark div#toolbar button:hover,
+body.darwin.dark div#toolbar button:focus {
+  background-color: var(--theme-primary-2);
+  color: var(--text-highlight);
+}
+body.darwin div#toolbar button:active,
+body.darwin.dark div#toolbar button:active {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.darwin div#toolbar button#toolbar-pomodoro,
+body.darwin.dark div#toolbar button#toolbar-pomodoro {
+  padding: 0 4px;
+}
+body.darwin .progress-ring circle,
+body.darwin.dark .progress-ring circle {
+  stroke: var(--theme-primary-8);
+}
+body.darwin .progress-ring circle + circle,
+body.darwin.dark .progress-ring circle + circle {
+  stroke: var(--theme-secondary-0);
+}
+body.darwin #toolbar-document-info,
+body.darwin.dark #toolbar-document-info {
+  text-wrap: nowrap;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 0 8px;
+}
+body.darwin #toolbar-document-info:hover, body.darwin #toolbar-document-info:focus,
+body.darwin.dark #toolbar-document-info:hover,
+body.darwin.dark #toolbar-document-info:focus {
+  background-color: var(--theme-primary-2);
+}
+body.darwin #toolbar-document-info:active,
+body.darwin.dark #toolbar-document-info:active {
+  background-color: var(--theme-primary-4);
+}
+body.darwin #window-content > .split-view > .view,
+body.darwin.dark #window-content > .split-view > .view {
+  overflow: hidden;
+}
+body.darwin #file-manager #component-container,
+body.darwin.dark #file-manager #component-container {
+  height: calc(100% - 44px);
+}
+body.darwin #file-manager,
+body.darwin.dark #file-manager {
+  border-top: none;
+}
+body.darwin #file-manager .file-manager-filter,
+body.darwin.dark #file-manager .file-manager-filter {
+  background-color: transparent;
+  height: auto;
+  padding: 12px;
+}
+body.darwin #file-manager .file-manager-filter .file-manager-filter-input,
+body.darwin.dark #file-manager .file-manager-filter .file-manager-filter-input {
+  background-color: var(--theme-primary-2);
+  color: var(--text-default);
+  height: 32px;
+}
+body.darwin #file-manager .file-manager-filter .file-manager-filter-input:placeholder,
+body.darwin.dark #file-manager .file-manager-filter .file-manager-filter-input:placeholder {
+  color: var(--text-decent);
+}
+body.darwin #file-tree,
+body.darwin.dark #file-tree {
+  background-color: transparent;
+}
+body.darwin div.tree-item-container .tree-item,
+body.darwin.dark div.tree-item-container .tree-item {
+  margin: 4px 0;
+}
+body.darwin div.tree-item-container .tree-item .item-icon,
+body.darwin.dark div.tree-item-container .tree-item .item-icon {
+  width: 20px;
+  color: var(--text-subtle);
+}
+body.darwin div.tree-item-container .tree-item .item-icon:hover, body.darwin div.tree-item-container .tree-item .item-icon:focus,
+body.darwin.dark div.tree-item-container .tree-item .item-icon:hover,
+body.darwin.dark div.tree-item-container .tree-item .item-icon:focus {
+  color: var(--text-decent);
+}
+body.darwin div.tree-item-container .tree-item .item-icon:active,
+body.darwin.dark div.tree-item-container .tree-item .item-icon:active {
+  color: var(--text-default);
+}
+body.darwin div.tree-item-container .tree-item .toggle-icon,
+body.darwin.dark div.tree-item-container .tree-item .toggle-icon {
+  border-radius: 6px 0 0 6px;
+  padding: 4px;
+}
+body.darwin div.tree-item-container .tree-item .display-text,
+body.darwin.dark div.tree-item-container .tree-item .display-text {
+  border-radius: 0 6px 6px 0;
+  background-image: none;
+  padding: 4px;
+  display: flex;
+}
+body.darwin div.tree-item-container .tree-item:hover .toggle-icon,
+body.darwin div.tree-item-container .tree-item:hover .display-text,
+body.darwin.dark div.tree-item-container .tree-item:hover .toggle-icon,
+body.darwin.dark div.tree-item-container .tree-item:hover .display-text {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.darwin div.tree-item-container .tree-item.selected .toggle-icon,
+body.darwin div.tree-item-container .tree-item.selected .display-text,
+body.darwin.dark div.tree-item-container .tree-item.selected .toggle-icon,
+body.darwin.dark div.tree-item-container .tree-item.selected .display-text {
+  background-color: var(--highlight);
+  color: var(--text-highlight);
+}
+body.darwin #file-tree #directories-dirs-header cds-icon,
+body.darwin.dark #file-tree #directories-dirs-header cds-icon {
+  display: none;
+}
+body.darwin #file-tree #directories-dirs-header,
+body.darwin #file-tree #directories-files-header,
+body.darwin.dark #file-tree #directories-dirs-header,
+body.darwin.dark #file-tree #directories-files-header {
+  margin: 42px 0px 5px 10px;
+  color: var(--text-subtle);
+  font-size: 13px;
+  font-family: monospace;
+  background-color: var(--theme-primary-2);
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: normal;
+  font-style: italic;
+  border: none;
+}
+body.darwin .tree-item,
+body.darwin.dark .tree-item {
+  cursor: pointer;
+}
+body.darwin .document-tablist-wrapper,
+body.darwin.dark .document-tablist-wrapper {
+  background-color: var(--theme-primary-1);
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px 12px 4px 12px;
+}
+body.darwin div.tab-container,
+body.darwin.dark div.tab-container {
+  border: none;
+  background-color: var(--theme-primary-1);
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+body.darwin div.tab-container div[role=tab],
+body.darwin.dark div.tab-container div[role=tab] {
+  color: var(--text-decent);
+  background-color: var(--theme-primary-0);
+  border: none;
+  border-radius: 6px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  text-align: unset;
+  line-height: normal;
+  height: 32px;
+  cursor: pointer;
+  padding: 0 6px 0 12px;
+}
+body.darwin div.tab-container div[role=tab]:not(:last-child),
+body.darwin.dark div.tab-container div[role=tab]:not(:last-child) {
+  border: none;
+}
+body.darwin div.tab-container div[role=tab]:hover,
+body.darwin.dark div.tab-container div[role=tab]:hover {
+  background-color: var(--theme-primary-2);
+}
+body.darwin div.tab-container div[role=tab].active,
+body.darwin.dark div.tab-container div[role=tab].active {
+  color: var(--text-default);
+  background-color: var(--theme-primary-5);
+  cursor: default;
+  border: none;
+}
+body.darwin div.tab-container div[role=tab] .close,
+body.darwin.dark div.tab-container div[role=tab] .close {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+  margin: 0;
+  opacity: 1;
+  color: var(--theme-secondary-8);
+}
+body.darwin div.tab-container div[role=tab] .close:hover,
+body.darwin.dark div.tab-container div[role=tab] .close:hover {
+  background-color: var(--theme-primary-8);
+  color: var(--theme-secondary-4);
+  cursor: pointer;
+}
+body.darwin div.tab-container div[role=tab] .filename,
+body.darwin.dark div.tab-container div[role=tab] .filename {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+body.darwin div.tab-container div[role=tab] .deduplicate,
+body.darwin.dark div.tab-container div[role=tab] .deduplicate {
+  margin-right: 0;
+}
+body.darwin div.document-tablist-wrapper div.scroller,
+body.darwin.dark div.document-tablist-wrapper div.scroller {
+  background-color: var(--theme-primary-0);
+  cursor: pointer;
+  position: unset;
+  border-radius: 6px;
+  border: none;
+  box-shadow: none;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+}
+body.darwin div.document-tablist-wrapper div.scroller.left,
+body.darwin.dark div.document-tablist-wrapper div.scroller.left {
+  order: -1;
+}
+body.darwin div.document-tablist-wrapper div.scroller.right,
+body.darwin.dark div.document-tablist-wrapper div.scroller.right {
+  order: 1;
+}
+body.darwin div.document-tablist-wrapper div.scroller:hover,
+body.darwin.dark div.document-tablist-wrapper div.scroller:hover {
+  background-color: var(--theme-primary-2);
+}
+body.darwin div.document-tablist-wrapper div.scroller:active,
+body.darwin.dark div.document-tablist-wrapper div.scroller:active {
+  background-color: var(--theme-primary-5);
+}
+body.darwin div.document-tablist-wrapper.scrollers-active,
+body.darwin.dark div.document-tablist-wrapper.scrollers-active {
+  padding: 12px 12px 4px 12px;
+}
+body.darwin div.split-view div.view.view-border,
+body.darwin.dark div.split-view div.view.view-border {
+  border: none;
+  border-radius: 6px;
+}
+body.darwin div#window-content.disable-vibrancy,
+body.darwin.dark div#window-content.disable-vibrancy {
+  background-color: var(--theme-primary-0);
+}
+body.darwin .main-editor-wrapper,
+body.darwin.dark .main-editor-wrapper {
+  background-color: var(--theme-primary-1);
+}
+body.darwin .editor-pane .editor-container .empty-pane,
+body.darwin.dark .editor-pane .editor-container .empty-pane {
+  background-color: var(--theme-primary-1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: none;
+}
+body.darwin .editor-pane .editor-container .empty-pane::before,
+body.darwin.dark .editor-pane .editor-container .empty-pane::before {
+  content: "Zettlr";
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--text-subtle);
+  font-family: monospace;
+  white-space: pre-wrap;
+  text-align: center;
+  margin: 0 0 2px 0;
+}
+body.darwin .editor-pane .editor-container .empty-pane::after,
+body.darwin.dark .editor-pane .editor-container .empty-pane::after {
+  content: "Erscheinung";
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--text-subtle);
+  font-family: monospace;
+  white-space: pre-wrap;
+  text-align: center;
+}
+body.darwin .ͼu .cm-scroller,
+body.darwin .ͼv .cm-scroller,
+body.darwin.dark .ͼu .cm-scroller,
+body.darwin.dark .ͼv .cm-scroller {
+  color: var(--text-default);
+}
+body.darwin .ͼv .cm-url,
+body.darwin .ͼv .cm-code-mark,
+body.darwin .cm-meta,
+body.darwin.dark .ͼv .cm-url,
+body.darwin.dark .ͼv .cm-code-mark,
+body.darwin.dark .cm-meta {
+  color: var(--theme-primary-8);
+}
+body.darwin .ͼv .cm-link,
+body.darwin.dark .ͼv .cm-link {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+body.darwin .ͼv .cm-zkn-tag,
+body.darwin.dark .ͼv .cm-zkn-tag {
+  background-color: var(--pine-green-4);
+  color: var(--text-default);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-weight: normal;
+  font-size: 0.7em;
+  cursor: context-menu;
+}
+body.darwin .ͼv .cm-zkn-tag:hover, body.darwin .ͼv .cm-zkn-tag:focus,
+body.darwin.dark .ͼv .cm-zkn-tag:hover,
+body.darwin.dark .ͼv .cm-zkn-tag:focus {
+  background-color: var(--pine-green-6);
+}
+body.darwin .ͼv .cm-zkn-tag:active,
+body.darwin.dark .ͼv .cm-zkn-tag:active {
+  background-color: var(--pine-green-2);
+}
+body.darwin .ͼv .cm-zkn-link,
+body.darwin.dark .ͼv .cm-zkn-link {
+  color: var(--text-default);
+  text-decoration: underline;
+}
+body.darwin .cm-editor .cm-selectionMatch,
+body.darwin.dark .cm-editor .cm-selectionMatch {
+  background-color: transparent;
+}
+body.darwin .ͼv .cm-cursor-primary,
+body.darwin.dark .ͼv .cm-cursor-primary {
+  background: var(--text-subtle);
+}
+body.darwin .ͼ1 .cm-foldPlaceholder,
+body.darwin.dark .ͼ1 .cm-foldPlaceholder {
+  background-color: var(--theme-primary-4);
+  border: none;
+  color: var(--text-decent);
+  border-radius: 6px;
+  margin: 0 12px;
+  padding: 0 6px 4px 6px;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  bottom: 2px;
+}
+body.darwin .ͼ1 .cm-foldPlaceholder:hover, body.darwin .ͼ1 .cm-foldPlaceholder:focus,
+body.darwin.dark .ͼ1 .cm-foldPlaceholder:hover,
+body.darwin.dark .ͼ1 .cm-foldPlaceholder:focus {
+  background-color: var(--theme-primary-5);
+}
+body.darwin .ͼ1 .cm-foldPlaceholder:active,
+body.darwin.dark .ͼ1 .cm-foldPlaceholder:active {
+  background-color: var(--theme-primary-3);
+}
+body.darwin .ͼ3 .cm-gutters,
+body.darwin.dark .ͼ3 .cm-gutters {
+  background-color: var(--theme-primary-1);
+  color: var(--text-subtle);
+}
+body.darwin .ͼ1 .cm-foldGutter span,
+body.darwin.dark .ͼ1 .cm-foldGutter span {
+  background-color: var(--theme-primary-4);
+  color: var(--text-decent);
+  padding: 0px 9px 6px 9px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+body.darwin .ͼ1 .cm-foldGutter span:hover, body.darwin .ͼ1 .cm-foldGutter span:focus,
+body.darwin.dark .ͼ1 .cm-foldGutter span:hover,
+body.darwin.dark .ͼ1 .cm-foldGutter span:focus {
+  background-color: var(--theme-primary-5);
+}
+body.darwin .ͼ1 .cm-foldGutter span:active,
+body.darwin.dark .ͼ1 .cm-foldGutter span:active {
+  background-color: var(--theme-primary-3);
+}
+body.darwin .ͼ1 .cm-foldGutter span[title~=Unfold],
+body.darwin.dark .ͼ1 .cm-foldGutter span[title~=Unfold] {
+  padding-top: 4px;
+}
+body.darwin .ͼ1 .cm-lineNumbers .cm-gutterElement,
+body.darwin.dark .ͼ1 .cm-lineNumbers .cm-gutterElement {
+  padding: 2px 4px 0 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: default;
+}
+body.darwin .cm-editor .size-header-2,
+body.darwin.dark .cm-editor .size-header-2 {
+  font-size: 1.6em;
+}
+body.darwin .cm-editor .size-header-3,
+body.darwin.dark .cm-editor .size-header-3 {
+  font-size: 1.4em;
+}
+body.darwin .cm-editor .size-header-4,
+body.darwin.dark .cm-editor .size-header-4 {
+  font-size: 1.2em;
+}
+body.darwin .cm-editor .size-header-5,
+body.darwin.dark .cm-editor .size-header-5 {
+  font-size: 1.1em;
+}
+body.darwin .cm-editor .size-header-6,
+body.darwin.dark .cm-editor .size-header-6 {
+  font-size: 1em;
+}
+body.darwin .ͼ4 .cm-line::selection,
+body.darwin .ͼv .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.darwin .ͼv.cm-focused .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.darwin .ͼv ::selection,
+body.darwin.dark .ͼ4 .cm-line::selection,
+body.darwin.dark .ͼv .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.darwin.dark .ͼv.cm-focused .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.darwin.dark .ͼv ::selection {
+  color: var(--text-default);
+  background-color: var(--theme-primary-3);
+}
+body.darwin .ͼ3 .cm-readability-0,
+body.darwin.dark .ͼ3 .cm-readability-0 {
+  background-color: var(--danger-4);
+  color: var(--text-default);
+}
+body.darwin .rendered-bullet,
+body.darwin .cm-list.cm-content-span.cm-code-mark.cm-meta,
+body.darwin.dark .rendered-bullet,
+body.darwin.dark .cm-list.cm-content-span.cm-code-mark.cm-meta {
+  line-height: 1em;
+  width: 0.4386842105em;
+  display: inline-block;
+  text-indent: 0;
+}
+body.darwin .ͼ2 .cm-panels-bottom,
+body.darwin.dark .ͼ2 .cm-panels-bottom {
+  border: none;
+}
+body.darwin .ͼ2 .cm-panels,
+body.darwin .ͼ3 .cm-statusbar,
+body.darwin.dark .ͼ2 .cm-panels,
+body.darwin.dark .ͼ3 .cm-statusbar {
+  background-color: var(--theme-primary-1);
+  color: var(--text-subtle);
+}
+body.darwin .popover-arrow,
+body.darwin.dark .popover-arrow {
+  border-bottom-color: var(--theme-primary-5);
+}
+body.darwin .popover,
+body.darwin.dark .popover {
+  border-width: 2px;
+  background-color: var(--theme-primary-2);
+  border-color: var(--theme-primary-5);
+  padding: 12px;
+}
+body.darwin .stats-popover,
+body.darwin.dark .stats-popover {
+  padding: 0px;
+}
+body.darwin .tag-cloud,
+body.darwin.dark .tag-cloud {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body.darwin .tag-cloud div.form-control .input-text-button-group,
+body.darwin.dark .tag-cloud div.form-control .input-text-button-group {
+  background-color: var(--theme-primary-4);
+  color: var(--theme-secondary-2);
+  border-color: transparent;
+  border-radius: 6px;
+}
+body.darwin .tag-cloud h3,
+body.darwin.dark .tag-cloud h3 {
+  order: -2;
+  margin-bottom: 12px;
+  width: 100%;
+}
+body.darwin .tag-cloud .system-tablist,
+body.darwin.dark .tag-cloud .system-tablist {
+  justify-content: space-around;
+  padding: 10px 0px;
+  order: 0;
+  width: 100%;
+}
+body.darwin .tag-cloud .system-tablist .system-tab:not(:last-child),
+body.darwin.dark .tag-cloud .system-tablist .system-tab:not(:last-child) {
+  border-right: transparent;
+}
+body.darwin .tag-cloud .system-tablist .system-tab,
+body.darwin.dark .tag-cloud .system-tablist .system-tab {
+  background-color: var(--theme-primary-4);
+  cursor: pointer;
+}
+body.darwin .tag-cloud .system-tablist .system-tab:hover, body.darwin .tag-cloud .system-tablist .system-tab:focus,
+body.darwin.dark .tag-cloud .system-tablist .system-tab:hover,
+body.darwin.dark .tag-cloud .system-tablist .system-tab:focus {
+  background-color: var(--theme-primary-6);
+}
+body.darwin .tag-cloud .system-tablist .system-tab:active,
+body.darwin.dark .tag-cloud .system-tablist .system-tab:active {
+  background-color: var(--theme-primary-8);
+}
+body.darwin .tag-cloud .system-tablist .system-tab.active,
+body.darwin.dark .tag-cloud .system-tablist .system-tab.active {
+  background-color: var(--theme-primary-8);
+  cursor: default;
+}
+body.darwin .tag-cloud .form-control,
+body.darwin.dark .tag-cloud .form-control {
+  order: -1;
+  width: 100%;
+}
+body.darwin .tag-cloud .tag,
+body.darwin.dark .tag-cloud .tag {
+  display: inline-block;
+  margin: 4px;
+  background-color: var(--pine-green-4);
+  color: var(--text-default);
+  border-radius: 999px;
+  padding: 4px 6px;
+  font-weight: normal;
+  cursor: pointer;
+}
+body.darwin .tag-cloud .tag:hover, body.darwin .tag-cloud .tag:focus,
+body.darwin.dark .tag-cloud .tag:hover,
+body.darwin.dark .tag-cloud .tag:focus {
+  background-color: var(--pine-green-6);
+}
+body.darwin .tag-cloud .tag:active,
+body.darwin.dark .tag-cloud .tag:active {
+  background-color: var(--pine-green-2);
+}
+body.darwin .ͼ1 .cm-tooltip,
+body.darwin .ͼ3 .cm-tooltip,
+body.darwin .ͼ4 .cm-tooltip,
+body.darwin .ev .cm-tooltip,
+body.darwin.dark .ͼ1 .cm-tooltip,
+body.darwin.dark .ͼ3 .cm-tooltip,
+body.darwin.dark .ͼ4 .cm-tooltip,
+body.darwin.dark .ev .cm-tooltip {
+  padding: 6px;
+  background-color: var(--theme-primary-2);
+  color: var(--text-default);
+  border: 2px solid var(--theme-primary-5);
+}
+body.darwin .ͼ1 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin .ͼ3 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin .ͼ4 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin .ev .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin.dark .ͼ1 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin.dark .ͼ3 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin.dark .ͼ4 .cm-tooltip .cm-tooltip-arrow:before,
+body.darwin.dark .ev .cm-tooltip .cm-tooltip-arrow:before {
+  border-top-color: var(--theme-primary-5);
+  border-bottom-color: var(--theme-primary-5);
+}
+body.darwin .ͼ1 .cm-tooltip.cm-formatting-bar,
+body.darwin .ͼ3 .cm-tooltip.cm-formatting-bar,
+body.darwin .ͼ4 .cm-tooltip.cm-formatting-bar,
+body.darwin .ev .cm-tooltip.cm-formatting-bar,
+body.darwin.dark .ͼ1 .cm-tooltip.cm-formatting-bar,
+body.darwin.dark .ͼ3 .cm-tooltip.cm-formatting-bar,
+body.darwin.dark .ͼ4 .cm-tooltip.cm-formatting-bar,
+body.darwin.dark .ev .cm-tooltip.cm-formatting-bar {
+  border-radius: 6px;
+}
+body.darwin .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.darwin.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button {
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-decent);
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+body.darwin .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover, body.darwin .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.darwin.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.darwin.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.darwin .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.darwin.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active {
+  background-color: var(--theme-primary-6);
+  color: var(--text-highlight);
+}
+body.darwin div.application-menu,
+body.darwin.dark div.application-menu {
+  background-color: var(--theme-primary-2);
+  border-color: var(--theme-primary-5);
+  color: var(--text-default);
+  border-radius: 6px;
+}
+body.darwin div.application-menu div.menu-item,
+body.darwin.dark div.application-menu div.menu-item {
+  padding: 4px 0;
+  height: auto;
+  grid-template-columns: 24px auto 80px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+body.darwin div.application-menu div.menu-item.disabled,
+body.darwin.dark div.application-menu div.menu-item.disabled {
+  color: var(--text-subtle);
+  cursor: default;
+}
+body.darwin div.application-menu div.menu-item:not(.separator):not(.disabled):hover, body.darwin div.application-menu div.menu-item:not(.separator):not(.disabled):focus,
+body.darwin.dark div.application-menu div.menu-item:not(.separator):not(.disabled):hover,
+body.darwin.dark div.application-menu div.menu-item:not(.separator):not(.disabled):focus {
+  background-color: var(--theme-primary-4);
+}
+body.darwin div.application-menu div.menu-item:not(.separator):not(.disabled):active,
+body.darwin.dark div.application-menu div.menu-item:not(.separator):not(.disabled):active {
+  background-color: var(--theme-primary-6);
+}
+body.darwin div.application-menu div.menu-item div.after-element,
+body.darwin.dark div.application-menu div.menu-item div.after-element {
+  padding-right: 8px;
+  color: var(--text-subtle);
+}
+body.darwin div.application-menu div.menu-item.separator,
+body.darwin.dark div.application-menu div.menu-item.separator {
+  border-color: var(--theme-primary-4);
+  padding: 0;
+}
+body.darwin .cm-panels.cm-panels-top,
+body.darwin.dark .cm-panels.cm-panels-top {
+  background-color: var(--theme-primary-1);
+  margin: 12px;
+}
+body.darwin .cm-search,
+body.darwin.dark .cm-search {
+  padding: 12px;
+  background-color: var(--theme-primary-2);
+  color: var(--theme-secondary-2);
+  border-radius: 6px;
+  width: 100%;
+}
+body.darwin .cm-search input,
+body.darwin.dark .cm-search input {
+  font-size: 12px;
+  margin: 6px;
+}
+body.darwin .cm-search input[name=search],
+body.darwin .cm-search input[name=replace],
+body.darwin.dark .cm-search input[name=search],
+body.darwin.dark .cm-search input[name=replace] {
+  height: 32px;
+  background-color: var(--theme-primary-4);
+}
+body.darwin .cm-search input[type=checkbox],
+body.darwin.dark .cm-search input[type=checkbox] {
+  cursor: pointer;
+}
+body.darwin .cm-search label,
+body.darwin.dark .cm-search label {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 6px;
+}
+body.darwin .ͼ1 .cm-panels button,
+body.darwin.dark .ͼ1 .cm-panels button {
+  cursor: pointer;
+  color: var(--text-decent);
+  background-color: var(--theme-primary-4);
+}
+body.darwin .ͼ1 .cm-panels button:hover, body.darwin .ͼ1 .cm-panels button:focus,
+body.darwin.dark .ͼ1 .cm-panels button:hover,
+body.darwin.dark .ͼ1 .cm-panels button:focus {
+  background-color: var(--theme-primary-6);
+}
+body.darwin .ͼ1 .cm-panels button:active,
+body.darwin.dark .ͼ1 .cm-panels button:active {
+  color: var(--text-default);
+  background-color: var(--theme-primary-8);
+}
+body.darwin .ͼ1 .cm-panels button[name=close],
+body.darwin.dark .ͼ1 .cm-panels button[name=close] {
+  padding: 6px;
+  top: 18px;
+  right: 18px;
+  font-size: 12px;
+  width: 32px;
+  height: 32px;
+  line-height: normal;
+}
+body.darwin .ͼ1 .cm-panels .cm-button,
+body.darwin.dark .ͼ1 .cm-panels .cm-button {
+  font-size: 12px;
+  margin: 6px;
+  height: 32px;
+}
+body.darwin #app,
+body.darwin.dark #app {
+  scrollbar-color: var(--theme-primary-4) var(--theme-primary-0);
+  scrollbar-width: thin;
+}
+body.darwin div.tab-container div[role=tab],
+body.darwin.dark div.tab-container div[role=tab] {
+  padding: 0 12px 0 6px;
+}
+body.darwin div.tab-container div[role=tab] .close,
+body.darwin.dark div.tab-container div[role=tab] .close {
+  order: -2;
+}

@@ -1,0 +1,37 @@
+div#window-controls {
+  display: flex;
+  gap: 6px;
+
+  margin: 7px 6px 0 0;
+
+  .minimise,
+  .resize,
+  .close {
+    border-radius: 99px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--text-decent);
+    stroke: var(--text-decent);
+
+    &:hover,
+    &:focus {
+      background-color: var(--theme-primary-2);
+      fill: var(--text-highlight);
+      stroke: var(--text-highlight);
+    }
+
+    &:active {
+      background-color: var(--theme-primary-4);
+      fill: var(--text-highlight);
+      stroke: var(--text-highlight);
+    }
+  }
+
+  svg {
+    width: 8px;
+    height: 8px;
+  }
+}

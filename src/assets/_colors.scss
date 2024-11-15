@@ -1,0 +1,147 @@
+:root {
+  --highlight: #2d5d94;
+
+  --outer-space-0: #161a1f;
+  --outer-space-1: #1c2229;
+  --outer-space-2: #222b34;
+  --outer-space-3: #273340;
+  --outer-space-4: #2c3b4b;
+  --outer-space-5: #324456;
+  --outer-space-6: #384d62;
+  --outer-space-7: #3d546c;
+  --outer-space-8: #415b75;
+
+  --pine-green-0: #123434;
+  --pine-green-1: #123e3e;
+  --pine-green-2: #114848;
+  --pine-green-3: #0f5252;
+  --pine-green-4: #0a5c5c;
+  --pine-green-5: #306d6d;
+  --pine-green-6: #4b7e7d;
+  --pine-green-7: #65908f;
+  --pine-green-8: #7ea2a1;
+
+  --periwinkle-0: #e9eff9;
+  --periwinkle-1: #e0e9f8;
+  --periwinkle-2: #dce7f6;
+  --periwinkle-3: #d6e3f5;
+  --periwinkle-4: #d2e0f5;
+  --periwinkle-5: #bbcade;
+  --periwinkle-6: #a4b5c8;
+  --periwinkle-7: #8e9fb3;
+  --periwinkle-8: #788b9e;
+
+  --mahogany-0: #c69e9e;
+  --mahogany-1: #c28080;
+  --mahogany-2: #c56767;
+  --mahogany-3: #d24444;
+  --mahogany-4: #af2121;
+  --mahogany-5: #9f1818;
+  --mahogany-6: #921212;
+  --mahogany-7: #720d0d;
+  --mahogany-8: #460808;
+
+  --orange-0: #ddb7a0;
+  --orange-1: #dc956a;
+  --orange-2: #eb894f;
+  --orange-3: #dd6823;
+  --orange-4: #e5661a;
+  --orange-5: #cf5b17;
+  --orange-6: #a44912;
+  --orange-7: #7f380e;
+  --orange-8: #502309;
+
+  --asparagus-0: #babfaa;
+  --asparagus-1: #a8b28c;
+  --asparagus-2: #a1b075;
+  --asparagus-3: #7d923f;
+  --asparagus-4: #7d9536;
+  --asparagus-5: #6e8725;
+  --asparagus-6: #4c6013;
+  --asparagus-7: #39470f;
+  --asparagus-8: #283305;
+}
+
+body {
+  --theme-primary-0: var(--periwinkle-0);
+  --theme-primary-1: var(--periwinkle-1);
+  --theme-primary-2: var(--periwinkle-2);
+  --theme-primary-3: var(--periwinkle-3);
+  --theme-primary-4: var(--periwinkle-4);
+  --theme-primary-5: var(--periwinkle-5);
+  --theme-primary-6: var(--periwinkle-6);
+  --theme-primary-7: var(--periwinkle-7);
+  --theme-primary-8: var(--periwinkle-8);
+
+  --theme-secondary-0: var(--outer-space-0);
+  --theme-secondary-1: var(--outer-space-1);
+  --theme-secondary-2: var(--outer-space-2);
+  --theme-secondary-3: var(--outer-space-3);
+  --theme-secondary-4: var(--outer-space-4);
+  --theme-secondary-5: var(--outer-space-5);
+  --theme-secondary-6: var(--outer-space-6);
+  --theme-secondary-7: var(--outer-space-7);
+  --theme-secondary-8: var(--outer-space-8);
+
+  --warning-0: var(--orange-0);
+  --warning-1: var(--orange-1);
+  --warning-2: var(--orange-2);
+  --warning-3: var(--orange-3);
+  --warning-4: var(--orange-4);
+  --warning-5: var(--orange-5);
+  --warning-6: var(--orange-6);
+  --warning-7: var(--orange-7);
+  --warning-8: var(--orange-8);
+
+  --danger-0: var(--mahogany-0);
+  --danger-1: var(--mahogany-1);
+  --danger-2: var(--mahogany-2);
+  --danger-3: var(--mahogany-3);
+  --danger-4: var(--mahogany-4);
+  --danger-5: var(--mahogany-5);
+  --danger-6: var(--mahogany-6);
+  --danger-7: var(--mahogany-7);
+  --danger-8: var(--mahogany-8);
+
+  --success-0: var(--asparagus-0);
+  --success-1: var(--asparagus-1);
+  --success-2: var(--asparagus-2);
+  --success-3: var(--asparagus-3);
+  --success-4: var(--asparagus-4);
+  --success-5: var(--asparagus-5);
+  --success-6: var(--asparagus-6);
+  --success-7: var(--asparagus-7);
+  --success-8: var(--asparagus-8);
+
+  --text-highlight: var(--outer-space-0);
+  --text-default: var(--outer-space-2);
+  --text-decent: var(--outer-space-5);
+  --text-subtle: var(--outer-space-8);
+}
+
+body.dark {
+  --theme-primary-0: var(--outer-space-0);
+  --theme-primary-1: var(--outer-space-1);
+  --theme-primary-2: var(--outer-space-2);
+  --theme-primary-3: var(--outer-space-3);
+  --theme-primary-4: var(--outer-space-4);
+  --theme-primary-5: var(--outer-space-5);
+  --theme-primary-6: var(--outer-space-6);
+  --theme-primary-7: var(--outer-space-7);
+  --theme-primary-8: var(--outer-space-8);
+
+  --theme-secondary-0: var(--periwinkle-0);
+  --theme-secondary-1: var(--periwinkle-1);
+  --theme-secondary-2: var(--periwinkle-2);
+  --theme-secondary-3: var(--periwinkle-3);
+  --theme-secondary-4: var(--periwinkle-4);
+  --theme-secondary-5: var(--periwinkle-5);
+  --theme-secondary-6: var(--periwinkle-6);
+  --theme-secondary-7: var(--periwinkle-7);
+  --theme-secondary-8: var(--periwinkle-8);
+
+  --text-highlight: var(--periwinkle-0);
+  --text-default: var(--periwinkle-2);
+  --text-decent: var(--periwinkle-5);
+  --text-subtle: var(--periwinkle-8);
+}

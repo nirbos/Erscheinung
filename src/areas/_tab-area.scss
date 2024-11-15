@@ -1,0 +1,114 @@
+.document-tablist-wrapper {
+  background-color: var(--theme-primary-1);
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px 12px 4px 12px;
+}
+
+div.tab-container {
+  border: none;
+  background-color: var(--theme-primary-1);
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+
+  div[role="tab"] {
+    color: var(--text-decent);
+    background-color: var(--theme-primary-0);
+    border: none;
+    border-radius: 6px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 6px;
+    align-items: center;
+    text-align: unset;
+    line-height: normal;
+    height: 32px;
+    cursor: pointer;
+    padding: 0 6px 0 12px;
+
+    &:not(:last-child) {
+      border: none;
+    }
+
+    &:hover {
+      background-color: var(--theme-primary-2);
+    }
+
+    &.active {
+      color: var(--text-default);
+      background-color: var(--theme-primary-5);
+      cursor: default;
+      border: none;
+    }
+
+    .close {
+      width: 18px;
+      height: 18px;
+      //line-height: 16px;
+      line-height: 18px;
+      position: relative;
+      margin: 0;
+      opacity: 1;
+      color: var(--theme-secondary-8);
+
+      &:hover {
+        background-color: var(--theme-primary-8);
+        color: var(--theme-secondary-4);
+        cursor: pointer;
+      }
+    }
+
+    .filename {
+      line-height: normal;
+      margin: 0;
+      padding: 0;
+    }
+
+    .deduplicate {
+      margin-right: 0;
+    }
+  }
+}
+
+// Tab Scroller
+
+div.document-tablist-wrapper {
+  div.scroller {
+    background-color: var(--theme-primary-0);
+    cursor: pointer;
+    position: unset;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+    height: 32px;
+    width: 32px;
+    flex-shrink: 0;
+
+    &.left {
+      order: -1;
+    }
+
+    &.right {
+      order: 1;
+    }
+
+    &:hover {
+      background-color: var(--theme-primary-2);
+    }
+
+    &:active {
+      background-color: var(--theme-primary-5);
+    }
+  }
+
+  &.scrollers-active {
+    padding: 12px 12px 4px 12px;
+  }
+}

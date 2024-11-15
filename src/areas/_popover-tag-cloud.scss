@@ -1,0 +1,74 @@
+.tag-cloud {
+  padding: 0px; //Export has no wrapper, so padding has to go to root
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div.form-control .input-text-button-group {
+    background-color: var(--theme-primary-4);
+    color: var(--theme-secondary-2);
+    border-color: transparent;
+    border-radius: 6px;
+  }
+
+  h3 {
+    order: -2;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .system-tablist {
+    justify-content: space-around;
+    padding: 10px 0px;
+    order: 0;
+    width: 100%;
+
+    .system-tab:not(:last-child) {
+      border-right: transparent;
+    }
+
+    .system-tab {
+      background-color: var(--theme-primary-4);
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: var(--theme-primary-6);
+      }
+
+      &:active {
+        background-color: var(--theme-primary-8);
+      }
+
+      &.active {
+        background-color: var(--theme-primary-8);
+        cursor: default;
+      }
+    }
+  }
+
+  .form-control {
+    order: -1;
+    width: 100%;
+  }
+
+  .tag {
+    display: inline-block;
+    margin: 4px;
+    background-color: var(--pine-green-4);
+    color: var(--text-default);
+    border-radius: 999px; // Use the same border radius as in editor
+    padding: 4px 6px;
+    font-weight: normal;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--pine-green-6);
+    }
+
+    &:active {
+      background-color: var(--pine-green-2);
+    }
+  }
+}

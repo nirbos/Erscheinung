@@ -1,0 +1,1073 @@
+@charset "UTF-8";
+/* Erscheinung */
+:root {
+  --highlight: #2d5d94;
+  --outer-space-0: #161a1f;
+  --outer-space-1: #1c2229;
+  --outer-space-2: #222b34;
+  --outer-space-3: #273340;
+  --outer-space-4: #2c3b4b;
+  --outer-space-5: #324456;
+  --outer-space-6: #384d62;
+  --outer-space-7: #3d546c;
+  --outer-space-8: #415b75;
+  --pine-green-0: #123434;
+  --pine-green-1: #123e3e;
+  --pine-green-2: #114848;
+  --pine-green-3: #0f5252;
+  --pine-green-4: #0a5c5c;
+  --pine-green-5: #306d6d;
+  --pine-green-6: #4b7e7d;
+  --pine-green-7: #65908f;
+  --pine-green-8: #7ea2a1;
+  --periwinkle-0: #e9eff9;
+  --periwinkle-1: #e0e9f8;
+  --periwinkle-2: #dce7f6;
+  --periwinkle-3: #d6e3f5;
+  --periwinkle-4: #d2e0f5;
+  --periwinkle-5: #bbcade;
+  --periwinkle-6: #a4b5c8;
+  --periwinkle-7: #8e9fb3;
+  --periwinkle-8: #788b9e;
+  --mahogany-0: #c69e9e;
+  --mahogany-1: #c28080;
+  --mahogany-2: #c56767;
+  --mahogany-3: #d24444;
+  --mahogany-4: #af2121;
+  --mahogany-5: #9f1818;
+  --mahogany-6: #921212;
+  --mahogany-7: #720d0d;
+  --mahogany-8: #460808;
+  --orange-0: #ddb7a0;
+  --orange-1: #dc956a;
+  --orange-2: #eb894f;
+  --orange-3: #dd6823;
+  --orange-4: #e5661a;
+  --orange-5: #cf5b17;
+  --orange-6: #a44912;
+  --orange-7: #7f380e;
+  --orange-8: #502309;
+  --asparagus-0: #babfaa;
+  --asparagus-1: #a8b28c;
+  --asparagus-2: #a1b075;
+  --asparagus-3: #7d923f;
+  --asparagus-4: #7d9536;
+  --asparagus-5: #6e8725;
+  --asparagus-6: #4c6013;
+  --asparagus-7: #39470f;
+  --asparagus-8: #283305;
+}
+
+body {
+  --theme-primary-0: var(--periwinkle-0);
+  --theme-primary-1: var(--periwinkle-1);
+  --theme-primary-2: var(--periwinkle-2);
+  --theme-primary-3: var(--periwinkle-3);
+  --theme-primary-4: var(--periwinkle-4);
+  --theme-primary-5: var(--periwinkle-5);
+  --theme-primary-6: var(--periwinkle-6);
+  --theme-primary-7: var(--periwinkle-7);
+  --theme-primary-8: var(--periwinkle-8);
+  --theme-secondary-0: var(--outer-space-0);
+  --theme-secondary-1: var(--outer-space-1);
+  --theme-secondary-2: var(--outer-space-2);
+  --theme-secondary-3: var(--outer-space-3);
+  --theme-secondary-4: var(--outer-space-4);
+  --theme-secondary-5: var(--outer-space-5);
+  --theme-secondary-6: var(--outer-space-6);
+  --theme-secondary-7: var(--outer-space-7);
+  --theme-secondary-8: var(--outer-space-8);
+  --warning-0: var(--orange-0);
+  --warning-1: var(--orange-1);
+  --warning-2: var(--orange-2);
+  --warning-3: var(--orange-3);
+  --warning-4: var(--orange-4);
+  --warning-5: var(--orange-5);
+  --warning-6: var(--orange-6);
+  --warning-7: var(--orange-7);
+  --warning-8: var(--orange-8);
+  --danger-0: var(--mahogany-0);
+  --danger-1: var(--mahogany-1);
+  --danger-2: var(--mahogany-2);
+  --danger-3: var(--mahogany-3);
+  --danger-4: var(--mahogany-4);
+  --danger-5: var(--mahogany-5);
+  --danger-6: var(--mahogany-6);
+  --danger-7: var(--mahogany-7);
+  --danger-8: var(--mahogany-8);
+  --success-0: var(--asparagus-0);
+  --success-1: var(--asparagus-1);
+  --success-2: var(--asparagus-2);
+  --success-3: var(--asparagus-3);
+  --success-4: var(--asparagus-4);
+  --success-5: var(--asparagus-5);
+  --success-6: var(--asparagus-6);
+  --success-7: var(--asparagus-7);
+  --success-8: var(--asparagus-8);
+  --text-highlight: var(--outer-space-0);
+  --text-default: var(--outer-space-2);
+  --text-decent: var(--outer-space-5);
+  --text-subtle: var(--outer-space-8);
+}
+
+body.dark {
+  --theme-primary-0: var(--outer-space-0);
+  --theme-primary-1: var(--outer-space-1);
+  --theme-primary-2: var(--outer-space-2);
+  --theme-primary-3: var(--outer-space-3);
+  --theme-primary-4: var(--outer-space-4);
+  --theme-primary-5: var(--outer-space-5);
+  --theme-primary-6: var(--outer-space-6);
+  --theme-primary-7: var(--outer-space-7);
+  --theme-primary-8: var(--outer-space-8);
+  --theme-secondary-0: var(--periwinkle-0);
+  --theme-secondary-1: var(--periwinkle-1);
+  --theme-secondary-2: var(--periwinkle-2);
+  --theme-secondary-3: var(--periwinkle-3);
+  --theme-secondary-4: var(--periwinkle-4);
+  --theme-secondary-5: var(--periwinkle-5);
+  --theme-secondary-6: var(--periwinkle-6);
+  --theme-secondary-7: var(--periwinkle-7);
+  --theme-secondary-8: var(--periwinkle-8);
+  --text-highlight: var(--periwinkle-0);
+  --text-default: var(--periwinkle-2);
+  --text-decent: var(--periwinkle-5);
+  --text-subtle: var(--periwinkle-8);
+}
+
+body.win32 input,
+body.win32 select,
+body.win32 textarea,
+body.win32 button,
+body.win32.dark input,
+body.win32.dark select,
+body.win32.dark textarea,
+body.win32.dark button {
+  color: var(--text-default);
+  border-radius: 6px;
+  background-color: var(--theme-primary-2);
+  border-color: transparent;
+}
+body.win32 input::placeholder,
+body.win32 select::placeholder,
+body.win32 textarea::placeholder,
+body.win32 button::placeholder,
+body.win32.dark input::placeholder,
+body.win32.dark select::placeholder,
+body.win32.dark textarea::placeholder,
+body.win32.dark button::placeholder {
+  color: var(--text-subtle);
+}
+body.win32 input::-webkit-scrollbar,
+body.win32 select::-webkit-scrollbar,
+body.win32 textarea::-webkit-scrollbar,
+body.win32 button::-webkit-scrollbar,
+body.win32.dark input::-webkit-scrollbar,
+body.win32.dark select::-webkit-scrollbar,
+body.win32.dark textarea::-webkit-scrollbar,
+body.win32.dark button::-webkit-scrollbar {
+  width: 16px;
+}
+body.win32 ::-webkit-scrollbar-thumb,
+body.win32.dark ::-webkit-scrollbar-thumb {
+  background: var(--theme-primary-4);
+  border-radius: 99px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
+body.win32 ::-webkit-scrollbar-thumb:hover,
+body.win32.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--theme-primary-6);
+  cursor: grab;
+}
+body.win32 ::-webkit-scrollbar-thumb:active,
+body.win32.dark ::-webkit-scrollbar-thumb:active {
+  cursor: -webkit-grabbing;
+}
+body.win32 ::-webkit-scrollbar-track,
+body.win32.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+body.win32 #app,
+body.win32.dark #app {
+  color: var(--text-default);
+}
+body.win32 #menubar,
+body.win32.dark #menubar {
+  background-color: var(--theme-primary-0);
+  display: flex;
+  height: 36px;
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  padding-left: 42px;
+  align-items: center;
+}
+body.win32 #menubar span.top-level-item,
+body.win32.dark #menubar span.top-level-item {
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0 8px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-decent);
+}
+body.win32 #menubar span.top-level-item:hover, body.win32 #menubar span.top-level-item:focus,
+body.win32.dark #menubar span.top-level-item:hover,
+body.win32.dark #menubar span.top-level-item:focus {
+  background-color: var(--theme-primary-2);
+  color: var(--text-highlight);
+}
+body.win32 #menubar span.top-level-item:active,
+body.win32.dark #menubar span.top-level-item:active {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.win32 #window-controls .minimise,
+body.win32 #window-controls .resize,
+body.win32 #window-controls .close,
+body.win32.dark #window-controls .minimise,
+body.win32.dark #window-controls .resize,
+body.win32.dark #window-controls .close {
+  cursor: pointer;
+  fill: var(--text-decent);
+  stroke: var(--text-decent);
+}
+body.win32 div#toolbar,
+body.win32 div#toolbar,
+body.win32 div#toolbar,
+body.win32.dark div#toolbar,
+body.win32.dark div#toolbar,
+body.win32.dark div#toolbar {
+  background-color: var(--theme-primary-0);
+  color: var(--text-decent);
+}
+body.win32 div#toolbar div.three-way-toggle,
+body.win32.dark div#toolbar div.three-way-toggle {
+  margin: 0;
+  border-radius: 6px;
+}
+body.win32 div#toolbar div.three-way-toggle.active,
+body.win32.dark div#toolbar div.three-way-toggle.active {
+  background-color: var(--theme-primary-2);
+}
+body.win32 div#toolbar div.three-way-toggle:hover,
+body.win32.dark div#toolbar div.three-way-toggle:hover {
+  border-color: var(--theme-primary-8);
+}
+body.win32 div#toolbar div.three-way-toggle button.active,
+body.win32.dark div#toolbar div.three-way-toggle button.active {
+  background-color: var(--theme-primary-4);
+}
+body.win32 div#toolbar button,
+body.win32.dark div#toolbar button {
+  background-color: var(--theme-primary-0);
+  color: var(--text-decent);
+  padding: 0 8px;
+  display: flex;
+  height: 24px;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: auto;
+}
+body.win32 div#toolbar button:hover, body.win32 div#toolbar button:focus,
+body.win32.dark div#toolbar button:hover,
+body.win32.dark div#toolbar button:focus {
+  background-color: var(--theme-primary-2);
+  color: var(--text-highlight);
+}
+body.win32 div#toolbar button:active,
+body.win32.dark div#toolbar button:active {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.win32 div#toolbar button#toolbar-pomodoro,
+body.win32.dark div#toolbar button#toolbar-pomodoro {
+  padding: 0 4px;
+}
+body.win32 .progress-ring circle,
+body.win32.dark .progress-ring circle {
+  stroke: var(--theme-primary-8);
+}
+body.win32 .progress-ring circle + circle,
+body.win32.dark .progress-ring circle + circle {
+  stroke: var(--theme-secondary-0);
+}
+body.win32 #toolbar-document-info,
+body.win32.dark #toolbar-document-info {
+  text-wrap: nowrap;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 0 8px;
+}
+body.win32 #toolbar-document-info:hover, body.win32 #toolbar-document-info:focus,
+body.win32.dark #toolbar-document-info:hover,
+body.win32.dark #toolbar-document-info:focus {
+  background-color: var(--theme-primary-2);
+}
+body.win32 #toolbar-document-info:active,
+body.win32.dark #toolbar-document-info:active {
+  background-color: var(--theme-primary-4);
+}
+body.win32 #window-content > .split-view > .view,
+body.win32.dark #window-content > .split-view > .view {
+  overflow: hidden;
+}
+body.win32 #file-manager #component-container,
+body.win32.dark #file-manager #component-container {
+  height: calc(100% - 44px);
+}
+body.win32 #file-manager,
+body.win32.dark #file-manager {
+  border-top: none;
+}
+body.win32 #file-manager .file-manager-filter,
+body.win32.dark #file-manager .file-manager-filter {
+  background-color: transparent;
+  height: auto;
+  padding: 12px;
+}
+body.win32 #file-manager .file-manager-filter .file-manager-filter-input,
+body.win32.dark #file-manager .file-manager-filter .file-manager-filter-input {
+  background-color: var(--theme-primary-2);
+  color: var(--text-default);
+  height: 32px;
+}
+body.win32 #file-manager .file-manager-filter .file-manager-filter-input:placeholder,
+body.win32.dark #file-manager .file-manager-filter .file-manager-filter-input:placeholder {
+  color: var(--text-decent);
+}
+body.win32 #file-tree,
+body.win32.dark #file-tree {
+  background-color: transparent;
+}
+body.win32 div.tree-item-container .tree-item,
+body.win32.dark div.tree-item-container .tree-item {
+  margin: 4px 0;
+}
+body.win32 div.tree-item-container .tree-item .item-icon,
+body.win32.dark div.tree-item-container .tree-item .item-icon {
+  width: 20px;
+  color: var(--text-subtle);
+}
+body.win32 div.tree-item-container .tree-item .item-icon:hover, body.win32 div.tree-item-container .tree-item .item-icon:focus,
+body.win32.dark div.tree-item-container .tree-item .item-icon:hover,
+body.win32.dark div.tree-item-container .tree-item .item-icon:focus {
+  color: var(--text-decent);
+}
+body.win32 div.tree-item-container .tree-item .item-icon:active,
+body.win32.dark div.tree-item-container .tree-item .item-icon:active {
+  color: var(--text-default);
+}
+body.win32 div.tree-item-container .tree-item .toggle-icon,
+body.win32.dark div.tree-item-container .tree-item .toggle-icon {
+  border-radius: 6px 0 0 6px;
+  padding: 4px;
+}
+body.win32 div.tree-item-container .tree-item .display-text,
+body.win32.dark div.tree-item-container .tree-item .display-text {
+  border-radius: 0 6px 6px 0;
+  background-image: none;
+  padding: 4px;
+  display: flex;
+}
+body.win32 div.tree-item-container .tree-item:hover .toggle-icon,
+body.win32 div.tree-item-container .tree-item:hover .display-text,
+body.win32.dark div.tree-item-container .tree-item:hover .toggle-icon,
+body.win32.dark div.tree-item-container .tree-item:hover .display-text {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.win32 div.tree-item-container .tree-item.selected .toggle-icon,
+body.win32 div.tree-item-container .tree-item.selected .display-text,
+body.win32.dark div.tree-item-container .tree-item.selected .toggle-icon,
+body.win32.dark div.tree-item-container .tree-item.selected .display-text {
+  background-color: var(--highlight);
+  color: var(--text-highlight);
+}
+body.win32 #file-tree #directories-dirs-header cds-icon,
+body.win32.dark #file-tree #directories-dirs-header cds-icon {
+  display: none;
+}
+body.win32 #file-tree #directories-dirs-header,
+body.win32 #file-tree #directories-files-header,
+body.win32.dark #file-tree #directories-dirs-header,
+body.win32.dark #file-tree #directories-files-header {
+  margin: 42px 0px 5px 10px;
+  color: var(--text-subtle);
+  font-size: 13px;
+  font-family: monospace;
+  background-color: var(--theme-primary-2);
+  display: inline-block;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: normal;
+  font-style: italic;
+  border: none;
+}
+body.win32 .tree-item,
+body.win32.dark .tree-item {
+  cursor: pointer;
+}
+body.win32 .document-tablist-wrapper,
+body.win32.dark .document-tablist-wrapper {
+  background-color: var(--theme-primary-1);
+  padding: 0 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 12px 12px 4px 12px;
+}
+body.win32 div.tab-container,
+body.win32.dark div.tab-container {
+  border: none;
+  background-color: var(--theme-primary-1);
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+body.win32 div.tab-container div[role=tab],
+body.win32.dark div.tab-container div[role=tab] {
+  color: var(--text-decent);
+  background-color: var(--theme-primary-0);
+  border: none;
+  border-radius: 6px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 6px;
+  align-items: center;
+  text-align: unset;
+  line-height: normal;
+  height: 32px;
+  cursor: pointer;
+  padding: 0 6px 0 12px;
+}
+body.win32 div.tab-container div[role=tab]:not(:last-child),
+body.win32.dark div.tab-container div[role=tab]:not(:last-child) {
+  border: none;
+}
+body.win32 div.tab-container div[role=tab]:hover,
+body.win32.dark div.tab-container div[role=tab]:hover {
+  background-color: var(--theme-primary-2);
+}
+body.win32 div.tab-container div[role=tab].active,
+body.win32.dark div.tab-container div[role=tab].active {
+  color: var(--text-default);
+  background-color: var(--theme-primary-5);
+  cursor: default;
+  border: none;
+}
+body.win32 div.tab-container div[role=tab] .close,
+body.win32.dark div.tab-container div[role=tab] .close {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  position: relative;
+  margin: 0;
+  opacity: 1;
+  color: var(--theme-secondary-8);
+}
+body.win32 div.tab-container div[role=tab] .close:hover,
+body.win32.dark div.tab-container div[role=tab] .close:hover {
+  background-color: var(--theme-primary-8);
+  color: var(--theme-secondary-4);
+  cursor: pointer;
+}
+body.win32 div.tab-container div[role=tab] .filename,
+body.win32.dark div.tab-container div[role=tab] .filename {
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+body.win32 div.tab-container div[role=tab] .deduplicate,
+body.win32.dark div.tab-container div[role=tab] .deduplicate {
+  margin-right: 0;
+}
+body.win32 div.document-tablist-wrapper div.scroller,
+body.win32.dark div.document-tablist-wrapper div.scroller {
+  background-color: var(--theme-primary-0);
+  cursor: pointer;
+  position: unset;
+  border-radius: 6px;
+  border: none;
+  box-shadow: none;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+}
+body.win32 div.document-tablist-wrapper div.scroller.left,
+body.win32.dark div.document-tablist-wrapper div.scroller.left {
+  order: -1;
+}
+body.win32 div.document-tablist-wrapper div.scroller.right,
+body.win32.dark div.document-tablist-wrapper div.scroller.right {
+  order: 1;
+}
+body.win32 div.document-tablist-wrapper div.scroller:hover,
+body.win32.dark div.document-tablist-wrapper div.scroller:hover {
+  background-color: var(--theme-primary-2);
+}
+body.win32 div.document-tablist-wrapper div.scroller:active,
+body.win32.dark div.document-tablist-wrapper div.scroller:active {
+  background-color: var(--theme-primary-5);
+}
+body.win32 div.document-tablist-wrapper.scrollers-active,
+body.win32.dark div.document-tablist-wrapper.scrollers-active {
+  padding: 12px 12px 4px 12px;
+}
+body.win32 div.split-view div.view.view-border,
+body.win32.dark div.split-view div.view.view-border {
+  border: none;
+  border-radius: 6px;
+}
+body.win32 div#window-content.disable-vibrancy,
+body.win32.dark div#window-content.disable-vibrancy {
+  background-color: var(--theme-primary-0);
+}
+body.win32 .main-editor-wrapper,
+body.win32.dark .main-editor-wrapper {
+  background-color: var(--theme-primary-1);
+}
+body.win32 .editor-pane .editor-container .empty-pane,
+body.win32.dark .editor-pane .editor-container .empty-pane {
+  background-color: var(--theme-primary-1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: none;
+}
+body.win32 .editor-pane .editor-container .empty-pane::before,
+body.win32.dark .editor-pane .editor-container .empty-pane::before {
+  content: "Zettlr";
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--text-subtle);
+  font-family: monospace;
+  white-space: pre-wrap;
+  text-align: center;
+  margin: 0 0 2px 0;
+}
+body.win32 .editor-pane .editor-container .empty-pane::after,
+body.win32.dark .editor-pane .editor-container .empty-pane::after {
+  content: "Erscheinung";
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--text-subtle);
+  font-family: monospace;
+  white-space: pre-wrap;
+  text-align: center;
+}
+body.win32 .ͼu .cm-scroller,
+body.win32 .ͼv .cm-scroller,
+body.win32.dark .ͼu .cm-scroller,
+body.win32.dark .ͼv .cm-scroller {
+  color: var(--text-default);
+}
+body.win32 .ͼv .cm-url,
+body.win32 .ͼv .cm-code-mark,
+body.win32 .cm-meta,
+body.win32.dark .ͼv .cm-url,
+body.win32.dark .ͼv .cm-code-mark,
+body.win32.dark .cm-meta {
+  color: var(--theme-primary-8);
+}
+body.win32 .ͼv .cm-link,
+body.win32.dark .ͼv .cm-link {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+body.win32 .ͼv .cm-zkn-tag,
+body.win32.dark .ͼv .cm-zkn-tag {
+  background-color: var(--pine-green-4);
+  color: var(--text-default);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-weight: normal;
+  font-size: 0.7em;
+  cursor: context-menu;
+}
+body.win32 .ͼv .cm-zkn-tag:hover, body.win32 .ͼv .cm-zkn-tag:focus,
+body.win32.dark .ͼv .cm-zkn-tag:hover,
+body.win32.dark .ͼv .cm-zkn-tag:focus {
+  background-color: var(--pine-green-6);
+}
+body.win32 .ͼv .cm-zkn-tag:active,
+body.win32.dark .ͼv .cm-zkn-tag:active {
+  background-color: var(--pine-green-2);
+}
+body.win32 .ͼv .cm-zkn-link,
+body.win32.dark .ͼv .cm-zkn-link {
+  color: var(--text-default);
+  text-decoration: underline;
+}
+body.win32 .cm-editor .cm-selectionMatch,
+body.win32.dark .cm-editor .cm-selectionMatch {
+  background-color: transparent;
+}
+body.win32 .ͼv .cm-cursor-primary,
+body.win32.dark .ͼv .cm-cursor-primary {
+  background: var(--text-subtle);
+}
+body.win32 .ͼ1 .cm-foldPlaceholder,
+body.win32.dark .ͼ1 .cm-foldPlaceholder {
+  background-color: var(--theme-primary-4);
+  border: none;
+  color: var(--text-decent);
+  border-radius: 6px;
+  margin: 0 12px;
+  padding: 0 6px 4px 6px;
+  font-size: 16px;
+  font-weight: normal;
+  position: relative;
+  bottom: 2px;
+}
+body.win32 .ͼ1 .cm-foldPlaceholder:hover, body.win32 .ͼ1 .cm-foldPlaceholder:focus,
+body.win32.dark .ͼ1 .cm-foldPlaceholder:hover,
+body.win32.dark .ͼ1 .cm-foldPlaceholder:focus {
+  background-color: var(--theme-primary-5);
+}
+body.win32 .ͼ1 .cm-foldPlaceholder:active,
+body.win32.dark .ͼ1 .cm-foldPlaceholder:active {
+  background-color: var(--theme-primary-3);
+}
+body.win32 .ͼ3 .cm-gutters,
+body.win32.dark .ͼ3 .cm-gutters {
+  background-color: var(--theme-primary-1);
+  color: var(--text-subtle);
+}
+body.win32 .ͼ1 .cm-foldGutter span,
+body.win32.dark .ͼ1 .cm-foldGutter span {
+  background-color: var(--theme-primary-4);
+  color: var(--text-decent);
+  padding: 0px 9px 6px 9px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+body.win32 .ͼ1 .cm-foldGutter span:hover, body.win32 .ͼ1 .cm-foldGutter span:focus,
+body.win32.dark .ͼ1 .cm-foldGutter span:hover,
+body.win32.dark .ͼ1 .cm-foldGutter span:focus {
+  background-color: var(--theme-primary-5);
+}
+body.win32 .ͼ1 .cm-foldGutter span:active,
+body.win32.dark .ͼ1 .cm-foldGutter span:active {
+  background-color: var(--theme-primary-3);
+}
+body.win32 .ͼ1 .cm-foldGutter span[title~=Unfold],
+body.win32.dark .ͼ1 .cm-foldGutter span[title~=Unfold] {
+  padding-top: 4px;
+}
+body.win32 .ͼ1 .cm-lineNumbers .cm-gutterElement,
+body.win32.dark .ͼ1 .cm-lineNumbers .cm-gutterElement {
+  padding: 2px 4px 0 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  cursor: default;
+}
+body.win32 .cm-editor .size-header-2,
+body.win32.dark .cm-editor .size-header-2 {
+  font-size: 1.6em;
+}
+body.win32 .cm-editor .size-header-3,
+body.win32.dark .cm-editor .size-header-3 {
+  font-size: 1.4em;
+}
+body.win32 .cm-editor .size-header-4,
+body.win32.dark .cm-editor .size-header-4 {
+  font-size: 1.2em;
+}
+body.win32 .cm-editor .size-header-5,
+body.win32.dark .cm-editor .size-header-5 {
+  font-size: 1.1em;
+}
+body.win32 .cm-editor .size-header-6,
+body.win32.dark .cm-editor .size-header-6 {
+  font-size: 1em;
+}
+body.win32 .ͼ4 .cm-line::selection,
+body.win32 .ͼv .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.win32 .ͼv.cm-focused .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.win32 .ͼv ::selection,
+body.win32.dark .ͼ4 .cm-line::selection,
+body.win32.dark .ͼv .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.win32.dark .ͼv.cm-focused .cm-scroller .cm-layer.cm-selectionLayer .cm-selectionBackground,
+body.win32.dark .ͼv ::selection {
+  color: var(--text-default);
+  background-color: var(--theme-primary-3);
+}
+body.win32 .ͼ3 .cm-readability-0,
+body.win32.dark .ͼ3 .cm-readability-0 {
+  background-color: var(--danger-4);
+  color: var(--text-default);
+}
+body.win32 .rendered-bullet,
+body.win32 .cm-list.cm-content-span.cm-code-mark.cm-meta,
+body.win32.dark .rendered-bullet,
+body.win32.dark .cm-list.cm-content-span.cm-code-mark.cm-meta {
+  line-height: 1em;
+  width: 0.4386842105em;
+  display: inline-block;
+  text-indent: 0;
+}
+body.win32 .ͼ2 .cm-panels-bottom,
+body.win32.dark .ͼ2 .cm-panels-bottom {
+  border: none;
+}
+body.win32 .ͼ2 .cm-panels,
+body.win32 .ͼ3 .cm-statusbar,
+body.win32.dark .ͼ2 .cm-panels,
+body.win32.dark .ͼ3 .cm-statusbar {
+  background-color: var(--theme-primary-1);
+  color: var(--text-subtle);
+}
+body.win32 .popover-arrow,
+body.win32.dark .popover-arrow {
+  border-bottom-color: var(--theme-primary-5);
+}
+body.win32 .popover,
+body.win32.dark .popover {
+  border-width: 2px;
+  background-color: var(--theme-primary-2);
+  border-color: var(--theme-primary-5);
+  padding: 12px;
+}
+body.win32 .stats-popover,
+body.win32.dark .stats-popover {
+  padding: 0px;
+}
+body.win32 .tag-cloud,
+body.win32.dark .tag-cloud {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body.win32 .tag-cloud div.form-control .input-text-button-group,
+body.win32.dark .tag-cloud div.form-control .input-text-button-group {
+  background-color: var(--theme-primary-4);
+  color: var(--theme-secondary-2);
+  border-color: transparent;
+  border-radius: 6px;
+}
+body.win32 .tag-cloud h3,
+body.win32.dark .tag-cloud h3 {
+  order: -2;
+  margin-bottom: 12px;
+  width: 100%;
+}
+body.win32 .tag-cloud .system-tablist,
+body.win32.dark .tag-cloud .system-tablist {
+  justify-content: space-around;
+  padding: 10px 0px;
+  order: 0;
+  width: 100%;
+}
+body.win32 .tag-cloud .system-tablist .system-tab:not(:last-child),
+body.win32.dark .tag-cloud .system-tablist .system-tab:not(:last-child) {
+  border-right: transparent;
+}
+body.win32 .tag-cloud .system-tablist .system-tab,
+body.win32.dark .tag-cloud .system-tablist .system-tab {
+  background-color: var(--theme-primary-4);
+  cursor: pointer;
+}
+body.win32 .tag-cloud .system-tablist .system-tab:hover, body.win32 .tag-cloud .system-tablist .system-tab:focus,
+body.win32.dark .tag-cloud .system-tablist .system-tab:hover,
+body.win32.dark .tag-cloud .system-tablist .system-tab:focus {
+  background-color: var(--theme-primary-6);
+}
+body.win32 .tag-cloud .system-tablist .system-tab:active,
+body.win32.dark .tag-cloud .system-tablist .system-tab:active {
+  background-color: var(--theme-primary-8);
+}
+body.win32 .tag-cloud .system-tablist .system-tab.active,
+body.win32.dark .tag-cloud .system-tablist .system-tab.active {
+  background-color: var(--theme-primary-8);
+  cursor: default;
+}
+body.win32 .tag-cloud .form-control,
+body.win32.dark .tag-cloud .form-control {
+  order: -1;
+  width: 100%;
+}
+body.win32 .tag-cloud .tag,
+body.win32.dark .tag-cloud .tag {
+  display: inline-block;
+  margin: 4px;
+  background-color: var(--pine-green-4);
+  color: var(--text-default);
+  border-radius: 999px;
+  padding: 4px 6px;
+  font-weight: normal;
+  cursor: pointer;
+}
+body.win32 .tag-cloud .tag:hover, body.win32 .tag-cloud .tag:focus,
+body.win32.dark .tag-cloud .tag:hover,
+body.win32.dark .tag-cloud .tag:focus {
+  background-color: var(--pine-green-6);
+}
+body.win32 .tag-cloud .tag:active,
+body.win32.dark .tag-cloud .tag:active {
+  background-color: var(--pine-green-2);
+}
+body.win32 .ͼ1 .cm-tooltip,
+body.win32 .ͼ3 .cm-tooltip,
+body.win32 .ͼ4 .cm-tooltip,
+body.win32 .ev .cm-tooltip,
+body.win32.dark .ͼ1 .cm-tooltip,
+body.win32.dark .ͼ3 .cm-tooltip,
+body.win32.dark .ͼ4 .cm-tooltip,
+body.win32.dark .ev .cm-tooltip {
+  padding: 6px;
+  background-color: var(--theme-primary-2);
+  color: var(--text-default);
+  border: 2px solid var(--theme-primary-5);
+}
+body.win32 .ͼ1 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32 .ͼ3 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32 .ͼ4 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32 .ev .cm-tooltip .cm-tooltip-arrow:before,
+body.win32.dark .ͼ1 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32.dark .ͼ3 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32.dark .ͼ4 .cm-tooltip .cm-tooltip-arrow:before,
+body.win32.dark .ev .cm-tooltip .cm-tooltip-arrow:before {
+  border-top-color: var(--theme-primary-5);
+  border-bottom-color: var(--theme-primary-5);
+}
+body.win32 .ͼ1 .cm-tooltip.cm-formatting-bar,
+body.win32 .ͼ3 .cm-tooltip.cm-formatting-bar,
+body.win32 .ͼ4 .cm-tooltip.cm-formatting-bar,
+body.win32 .ev .cm-tooltip.cm-formatting-bar,
+body.win32.dark .ͼ1 .cm-tooltip.cm-formatting-bar,
+body.win32.dark .ͼ3 .cm-tooltip.cm-formatting-bar,
+body.win32.dark .ͼ4 .cm-tooltip.cm-formatting-bar,
+body.win32.dark .ev .cm-tooltip.cm-formatting-bar {
+  border-radius: 6px;
+}
+body.win32 .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32 .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32 .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32 .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button,
+body.win32.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button {
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-decent);
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+body.win32 .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover, body.win32 .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32 .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32 .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32 .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32 .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32 .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32 .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus,
+body.win32.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:hover,
+body.win32.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:focus {
+  background-color: var(--theme-primary-4);
+  color: var(--text-highlight);
+}
+body.win32 .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32 .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32 .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32 .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32.dark .ͼ1 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32.dark .ͼ3 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32.dark .ͼ4 .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active,
+body.win32.dark .ev .cm-tooltip.cm-formatting-bar button.formatting-toolbar-button:active {
+  background-color: var(--theme-primary-6);
+  color: var(--text-highlight);
+}
+body.win32 div.application-menu,
+body.win32.dark div.application-menu {
+  background-color: var(--theme-primary-2);
+  border-color: var(--theme-primary-5);
+  color: var(--text-default);
+  border-radius: 6px;
+}
+body.win32 div.application-menu div.menu-item,
+body.win32.dark div.application-menu div.menu-item {
+  padding: 4px 0;
+  height: auto;
+  grid-template-columns: 24px auto 80px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+body.win32 div.application-menu div.menu-item.disabled,
+body.win32.dark div.application-menu div.menu-item.disabled {
+  color: var(--text-subtle);
+  cursor: default;
+}
+body.win32 div.application-menu div.menu-item:not(.separator):not(.disabled):hover, body.win32 div.application-menu div.menu-item:not(.separator):not(.disabled):focus,
+body.win32.dark div.application-menu div.menu-item:not(.separator):not(.disabled):hover,
+body.win32.dark div.application-menu div.menu-item:not(.separator):not(.disabled):focus {
+  background-color: var(--theme-primary-4);
+}
+body.win32 div.application-menu div.menu-item:not(.separator):not(.disabled):active,
+body.win32.dark div.application-menu div.menu-item:not(.separator):not(.disabled):active {
+  background-color: var(--theme-primary-6);
+}
+body.win32 div.application-menu div.menu-item div.after-element,
+body.win32.dark div.application-menu div.menu-item div.after-element {
+  padding-right: 8px;
+  color: var(--text-subtle);
+}
+body.win32 div.application-menu div.menu-item.separator,
+body.win32.dark div.application-menu div.menu-item.separator {
+  border-color: var(--theme-primary-4);
+  padding: 0;
+}
+body.win32 .cm-panels.cm-panels-top,
+body.win32.dark .cm-panels.cm-panels-top {
+  background-color: var(--theme-primary-1);
+  margin: 12px;
+}
+body.win32 .cm-search,
+body.win32.dark .cm-search {
+  padding: 12px;
+  background-color: var(--theme-primary-2);
+  color: var(--theme-secondary-2);
+  border-radius: 6px;
+  width: 100%;
+}
+body.win32 .cm-search input,
+body.win32.dark .cm-search input {
+  font-size: 12px;
+  margin: 6px;
+}
+body.win32 .cm-search input[name=search],
+body.win32 .cm-search input[name=replace],
+body.win32.dark .cm-search input[name=search],
+body.win32.dark .cm-search input[name=replace] {
+  height: 32px;
+  background-color: var(--theme-primary-4);
+}
+body.win32 .cm-search input[type=checkbox],
+body.win32.dark .cm-search input[type=checkbox] {
+  cursor: pointer;
+}
+body.win32 .cm-search label,
+body.win32.dark .cm-search label {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 6px;
+}
+body.win32 .ͼ1 .cm-panels button,
+body.win32.dark .ͼ1 .cm-panels button {
+  cursor: pointer;
+  color: var(--text-decent);
+  background-color: var(--theme-primary-4);
+}
+body.win32 .ͼ1 .cm-panels button:hover, body.win32 .ͼ1 .cm-panels button:focus,
+body.win32.dark .ͼ1 .cm-panels button:hover,
+body.win32.dark .ͼ1 .cm-panels button:focus {
+  background-color: var(--theme-primary-6);
+}
+body.win32 .ͼ1 .cm-panels button:active,
+body.win32.dark .ͼ1 .cm-panels button:active {
+  color: var(--text-default);
+  background-color: var(--theme-primary-8);
+}
+body.win32 .ͼ1 .cm-panels button[name=close],
+body.win32.dark .ͼ1 .cm-panels button[name=close] {
+  padding: 6px;
+  top: 18px;
+  right: 18px;
+  font-size: 12px;
+  width: 32px;
+  height: 32px;
+  line-height: normal;
+}
+body.win32 .ͼ1 .cm-panels .cm-button,
+body.win32.dark .ͼ1 .cm-panels .cm-button {
+  font-size: 12px;
+  margin: 6px;
+  height: 32px;
+}
+body.win32 input,
+body.win32 select,
+body.win32 textarea,
+body.win32 button,
+body.win32.dark input,
+body.win32.dark select,
+body.win32.dark textarea,
+body.win32.dark button {
+  min-width: auto;
+}
+body.win32 div#window-controls .minimise,
+body.win32 div#window-controls .resize,
+body.win32 div#window-controls .close,
+body.win32.dark div#window-controls .minimise,
+body.win32.dark div#window-controls .resize,
+body.win32.dark div#window-controls .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--text-decent);
+  stroke: var(--text-decent);
+}
+body.win32 div#window-controls .minimise:hover, body.win32 div#window-controls .minimise:focus,
+body.win32 div#window-controls .resize:hover,
+body.win32 div#window-controls .resize:focus,
+body.win32 div#window-controls .close:hover,
+body.win32 div#window-controls .close:focus,
+body.win32.dark div#window-controls .minimise:hover,
+body.win32.dark div#window-controls .minimise:focus,
+body.win32.dark div#window-controls .resize:hover,
+body.win32.dark div#window-controls .resize:focus,
+body.win32.dark div#window-controls .close:hover,
+body.win32.dark div#window-controls .close:focus {
+  background-color: var(--theme-primary-2);
+  fill: var(--text-highlight);
+  stroke: var(--text-highlight);
+}
+body.win32 div#window-controls .minimise:active,
+body.win32 div#window-controls .resize:active,
+body.win32 div#window-controls .close:active,
+body.win32.dark div#window-controls .minimise:active,
+body.win32.dark div#window-controls .resize:active,
+body.win32.dark div#window-controls .close:active {
+  background-color: var(--theme-primary-4);
+  fill: var(--text-highlight);
+  stroke: var(--text-highlight);
+}
+body.win32 #file-manager .file-manager-filter,
+body.win32.dark #file-manager .file-manager-filter {
+  border-bottom: none;
+}
+body.win32 div#toolbar div.three-way-toggle,
+body.win32.dark div#toolbar div.three-way-toggle {
+  display: flex;
+}
+body.win32 div.tab-container div[role=tab] .close,
+body.win32.dark div.tab-container div[role=tab] .close {
+  border-radius: 6px;
+}

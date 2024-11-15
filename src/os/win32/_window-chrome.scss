@@ -1,0 +1,24 @@
+div#window-controls {
+  .minimise,
+  .resize,
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--text-decent);
+    stroke: var(--text-decent);
+
+    &:hover,
+    &:focus {
+      background-color: var(--theme-primary-2);
+      fill: var(--text-highlight);
+      stroke: var(--text-highlight);
+    }
+
+    &:active {
+      background-color: var(--theme-primary-4);
+      fill: var(--text-highlight);
+      stroke: var(--text-highlight);
+    }
+  }
+}
